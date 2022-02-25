@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  width: 40%;
+  min-width: 350px;
+  margin: auto;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+fieldset label,
+fieldset input,
+fieldset textarea{
+  margin-top: 1rem;
+}
+
+fieldset textarea {
+  resize: none;
+}
