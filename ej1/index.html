@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <script defer src="./index.js"></script>
   <title>Formulario 1</title>
 </head>
@@ -12,24 +12,26 @@
   
   <h1>Formulario 1</h1>
 
+  <a href="/index.html">Volver</a>
+
   <form>
     <fieldset>
       <legend>Registro</legend>
 
       <label for="name">Nombre</label>
-      <input type="text" id="name">
+      <input type="text" id="name" required>
 
       <label for="surname">Apellidos</label>
-      <input type="text" id="surname">
+      <input type="text" id="surname" required>
 
       <label for="email">Email</label>
-      <input type="email" id="email">
+      <input type="email" id="email" required>
 
       <label for="password">Contraseña</label>
-      <input type="text" id="password">
+      <input type="text" id="password" required>
 
       <label for="comments">Comentarios</label>
-      <textarea id="comments" cols="30" rows="10"></textarea>
+      <textarea id="comments" cols="30" rows="10" maxlength="50"></textarea>
 
       <div>
         <input type="checkbox" name="acepted" id="acepted">

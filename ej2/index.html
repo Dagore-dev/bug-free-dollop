@@ -4,12 +4,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="./index.js"></script>
   <title>Formulario 2</title>
 </head>
 <body>
-  
+    
   <h1>Formulario 2</h1>
 
-  
+  <a href="/index.html">Volver</a>
+
+  <form>
+    
+    <fieldset>
+
+      <legend>Datos personales</legend>
+
+      <label for="dni">DNI</label>
+      <input type="text" id="dni">
+
+      <label for="name">Nombre</label>
+      <input type="text" id="name">
+
+      <label for="surname">Apellidos</label>
+      <input type="text" id="surname">
+
+      <label for="phone">Teléfono</label>
+      <input type="tel" id="phone">
+
+      <label for="text">Comentario</label>
+      <textarea id="text" placeholder="Escriba aquí, por favor" cols="30" rows="10" maxlength="250" required></textarea>
+
+      <div>
+        <label for="time">Elija una hora:</label>
+        <input type="time" id="time">
+      </div>
+
+      <input type="submit" value="Enviar">
+
+    </fieldset>
+
+  </form>
+
 </body>
 </html>
