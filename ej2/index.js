@@ -9,12 +9,12 @@ const $TIME = document.getElementById('time')
 function handleSubmit ( e ) {
   e.preventDefault()
   
-  const dni = $DNI.value
+  const dni = $DNI.value.trim()
   const name = $NAME.value.trim()
-  const surname = $SURNAME.value
-  const phone = $PHONE.value
-  const text = $TEXT.value
-  const time = $TIME.value
+  const surname = $SURNAME.value.trim()
+  const phone = $PHONE.value.trim()
+  const text = $TEXT.value.trim()
+  const time = $TIME.value.trim()
 
   if ( isValidDNI(dni) && isValidName(name) && isValidName(surname) && isValidPhone(phone) && isValidComment(text) && isValidTime(time)) {
     const newUser = createUser(dni, name, surname, phone, text, time)

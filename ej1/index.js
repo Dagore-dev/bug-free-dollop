@@ -9,11 +9,11 @@ const $ACEPTED = document.getElementById('acepted')
 function handleSubmit(e) {
   e.preventDefault()
 
-  const name = $NAME.value
-  const surname = $SURNAME.value
-  const email = $EMAIL.value
-  const password = $PASSWORD.value
-  const comments = $COMMENTS.value
+  const name = $NAME.value.trim()
+  const surname = $SURNAME.value.trim()
+  const email = $EMAIL.value.trim()
+  const password = $PASSWORD.value.trim()
+  const comments = $COMMENTS.value.trim()
   const acepted = $ACEPTED.checked
 
   if ( name && isValidEmail(email) && comments && isValidPassword(password) && acepted ) {
@@ -27,7 +27,7 @@ function handleSubmit(e) {
 }
 
 function isValidEmail ( email ) {
-  const pattern = /.+@.+\..+/
+  const pattern = /^(.+\@.+\..+)$/
   return pattern.test(email)
 }
 
